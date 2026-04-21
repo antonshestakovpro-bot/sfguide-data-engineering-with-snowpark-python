@@ -13,3 +13,12 @@ snowpark:
         - name: "temp_f"
           type: "float"
       returns: float
+    - name: "celsius_to_fahrenheit_udf"
+      database: "hol_db"
+      schema: "analytics"
+      handler: "celsius2fahrenheit.main"
+      runtime: "3.10"
+      signature:
+        - name: "temp_c"
+          type: "float"
+      returns: float
