@@ -12,8 +12,9 @@
 import sys
 
 def main(temp_c: float) -> float:
+    # Converts Fahrenheit To Celsius
     return (float(temp_c) * (9/5) + 32) 
-
+ 
 
 # For local debugging
 # Be aware you may need to type-convert arguments if you add input parameters
